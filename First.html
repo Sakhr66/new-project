@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rahiq Aleanab - Home</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <style>
+  
+    .sidebar {
+      background-color: #f2f2f2;
+      width: 200px;
+      padding: 20px;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      margin-bottom: 20px;
+    }
+
+    .sidebar ul li {
+      margin-bottom: 10px;
+    }
+
+    .sidebar ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Rahiq Aleanab</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Discover Our Exclusive Collection</h2>
+      <p>Shop the latest trends in fashion and find your perfect style.</p>
+      <a href="#" class="btn">Explore Now</a>
+    </div>
+  </section>
+  
+  <section class="featured-products">
+    <h2>Featured Products</h2>
+    <div class="product-grid">
+      <div class="product">
+        <img src="product1.jpg" alt="Product 1">
+        <h3>Product 1</h3>
+        <p>Price: $19.99</p>
+      </div>
+      <div class="product">
+        <img src="product2.jpg" alt="Product 2">
+        <h3>Product 2</h3>
+        <p>Price: $29.99</p>
+      </div>
+      <div class="product">
+        <img src="product3.jpg" alt="Product 3">
+        <h3>Product 3</h3>
+        <p>Price: $24.99</p>
+      </div>
+    </div>
+  </section>
+  
+  <aside class="sidebar">
+    <h3>Standard User</h3>
+    <ul>
+      <li><a href="#">My Cart</a></li>
+      <li><a href="#">Products</a></li>
+      <li><a href="#">Orders</a></li>
+      <li><a href="#">Account Settings</a></li>
+    </ul>
+    <h3>Admin</h3>
+    <ul>
+      <li><a href="#">Dashboard</a></li>
+      <li><a href="#">Products</a></li>
+      <li><a href="#">Users</a></li>
+      <li><a href="#">Feedbacks</a></li>
+    </ul>
+  </aside>
+  
+  <footer>
+    <p>&copy; 2023 Rahiq Aleanab. All rights reserved.</p>
+  </footer>
+
+  <script>
+   
+    const links = document.querySelectorAll('nav ul li a');
+    links.forEach(link => {
+      link.addEventListener('click', e => {
